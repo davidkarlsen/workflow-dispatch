@@ -575,6 +575,7 @@ function run() {
                 ref: ref,
                 inputs: inputs
             });
+            core.debug(`dispatchReponse: ${dispatchResp}`);
             core.info(`API response status: ${dispatchResp.status} 🚀`);
         }
         catch (error) {
