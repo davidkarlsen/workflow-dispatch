@@ -52,7 +52,7 @@ async function run(): Promise<void> {
       ref: ref,
       inputs: inputs
     })
-    core.debug(`dispatchReponse: ${dispatchResp}`)
+    core.debug(JSON.stringify(dispatchResp))
     core.info(`API response status: ${dispatchResp.status} 🚀`)
   } catch (error) {
     core.setFailed(error.message)
